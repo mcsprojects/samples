@@ -22,13 +22,13 @@
 
 **Capturas de pantalla** ( en la carpeta `/screenshots`):
 
-![Test Image 1](/screenshots/Inicio.png)
+![Test Image 1](screenshots/Inicio.png)
 ---
 
-![Test Image 2](/screenshots/AñadirIncidencia.png)
+![Test Image 2](screenshots/AñadirIncidencia.png)
 ---
 
-![Test Image 3](/screenshots/Lista.png)
+![Test Image 3](screenshots/Lista.png)
 
 
 
