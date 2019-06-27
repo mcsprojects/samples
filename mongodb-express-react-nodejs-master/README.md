@@ -1,7 +1,7 @@
 ## Videoteca Online
 * Ejemplo de CRUD con MongoDB + Express + React + Node.js (MERN Stack)
 
-![Test Image 1](/screenshots/Inicio.png)
+![Test Image 1](screenshots/Inicio.png)
 
 #### Tecnologías empleadas:
 * Linux Mint 18.2 Sonya 
