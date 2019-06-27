@@ -1,0 +1,399 @@
+/** LISTA DE INCIDENCIAS - ENCABEZADO **/
+
+.boxed {
+  background-color: #185875;
+  border: 1px solid #185875;
+}
+h1.boxed {
+  color:#fff;
+
+}
+
+/** DETALLES DE LA INCIDENCIA **/
+
+
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+	background-color: #185875;	
+	color:#185875;
+}
+.upload-btn-wrapper 
+{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] 
+{
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.container-2 tr td {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+.container-2 {
+  max-width: 600px;
+  min-width: 510px;
+  margin: 5px auto 0px;
+  color:#d7dbdd;
+ 
+  
+}
+
+h4 #left {
+ text-align: left;
+  
+}
+
+dd{
+color:#8d8f91;
+}
+
+
+/** FORMULARIO - AÑADIR Y EDITAR INCIDENCIA **/
+
+.table-stripe{	       
+      color: #8d8f91;            
+}
+
+.container-3 {
+     
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+      display: table;
+      padding: 0 0 0 0;     
+      color: #e2f0f9;
+      font-weight: bold;      
+}
+
+.container-3 #white {
+	  background-color: #ffffff;
+      display: block;
+      border: 2px solid #ffffff;
+      border-radius: 5px;
+      width: 221px;
+      height: 25px;            
+}
+
+
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+		
+	color:#fff;
+}
+
+.upload-btn-wrapper 
+{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] 
+{
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+
+
+form > div > label {  
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #185875;
+  cursor: pointer;
+}
+
+
+.col-2, .col-3, .col-4 {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+form > div > .col-4 {
+  height: 86px;
+}
+
+label > input {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 27px;
+  line-height: 27px;
+  margin: 5px -5px 0;
+  padding: 7px 5px 3px;
+  border: none;
+  outline: none;
+  color: #555;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: .4;
+  transition: all linear .3s;
+}
+
+.col-submit {
+  text-align: center;
+  padding: 20px;
+}
+
+label > select {
+  display: block;
+  width: 100%;
+  padding: 0;
+  color: #555;
+  margin: 16px 0 6px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  opacity: .4;
+  transition: all linear .3s;
+}
+
+label > input:focus, label > select:focus {
+  opacity: 1;
+}
+
+/** button design based on http://codepen.io/guvootes/pen/eyDAb **/
+button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+  overflow: hidden;
+  outline: none;
+}
+.btn, #btn-custom{
+  width: 45%;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 5px auto 15px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+  overflow: hidden;
+  outline: none;
+}
+
+
+button.submitbtn {
+  background-image: -moz-linear-gradient(#185875, #4DC3FA);
+  background-image: -webkit-linear-gradient(#185875, #4DC3FA);
+  background-image: linear-gradient(#185875, #4DC3FA);
+  border-bottom: 1px solid #185875;
+  cursor: pointer;
+  color: #fff;
+}
+button.submitbtn:hover {
+  background-image: -moz-linear-gradient(#4DC3FA, #185875);
+  background-image: -webkit-linear-gradient(#4DC3FA, #185875);
+  background-image: linear-gradient(#4DC3FA, #185875);
+}
+button.submitbtn:active {
+  height: 34px;
+  border-bottom: 0;
+  margin: 1px 0 0 0;
+  background-image: -moz-linear-gradient(#185875, #4DC3FA);
+  background-image: -webkit-linear-gradient(#185875, #4DC3FA);
+  background-image: linear-gradient(#185875, #4DC3FA);
+  -moz-box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+/** responsive design **/
+@media(min-width: 850px){
+  form > div { display: inline-block; }
+  .col-submit { display: block; }
+
+  .col-2, .col-3, .col-4 { box-shadow: 1px 1px #e4e4e4; border: none; }
+
+  .col-2 { width: 50% }
+  .col-3 { width: 33.3333333333% }
+  .col-4 { width: 25% }
+
+  .col-submit button { width: 30%; margin: 0 auto; }
+}
+
+/** LISTA DE INCIDENCIAS - TABLA **/
+
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url((https://fonts.googleapis.com/css?family=Bitter);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color:#A7A1AE;
+  background-color:#1F2739;
+}
+
+
+h1 {
+  font-size:30px;
+  font-weight: 500;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+
+}
+
+h2 {
+
+  font-size:2em;
+  font-weight: 300;
+  margin-left: 45px;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: #A7A1AE;
+}
+
+h3 {
+
+  font-size:1.7em;
+  font-weight: 300;
+  margin-left: 45px;
+  display: block;
+  line-height:1em;
+  padding-bottom: 0.5em;
+  margin-top: -40px;
+  color: #A7A1AE;
+}
+
+h4 {
+color: #185875;  
+}
+
+h5 {
+font-weight: bold;
+margin-bottom: 25px;
+text-align: center;
+  
+}
+h6 {
+
+margin-bottom: 25px;
+text-align: center;
+  
+}
+
+.custom-1{
+  font-size: 15px;
+  line-height: 2.5;
+  border-bottom: solid 1px;        
+  border-top: solid 1px;
+  color: #e2f0f9; 
+}
+
+.App-link {
+  color: #185875;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+ 
+.wrapper{
+  margin-top: 30px;
+}                                                              
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+      text-align: left;
+      color: #e2f0f9;
+}
+
+.container td {
+	  font-weight: normal;
+	  font-size: 1em;      
+      -webkit-box-shadow: 0 2px 2px -2px #8e97b1;
+	  -moz-box-shadow: 0 2px 2px -2px #8e97b1;
+	   box-shadow: 0 2px 2px -2px #8e97b1;
+       text-align: left; 
+}
+
+
+.container {
+      
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+      display: table;
+      padding: 1em 0 8em 0;
+}
+
+.container td, .container th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+      padding-left:2%;
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+.container th {
+	  background-color: #10314d;
+}
+
+.container td:first-child { color: #A7A1AE; }
+
+
+
+.container tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+	        box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+@media (max-width: 800px) {
+.container td:nth-child(4),
+.container th:nth-child(4) { display: none; }
+}
+
+/** FIN CSS  de "LISTA DE INCIDENCIAS - TABLA" **/

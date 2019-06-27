@@ -1,0 +1,48 @@
+html, body {
+		overflow-x: hidden;
+}
+
+			
+ header {
+		display: inline-block;				
+		margin: 9em 0 2em 0;
+		padding: 3px 0 3px 0;
+}
+
+ header h2 {
+        display: block;
+		border-bottom: solid 1px;        
+		border-top: solid 1px;        
+		font-size: 2em;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		margin: 0;
+		padding-left: 0.05em;                   
+		position: relative;
+		text-transform: uppercase;                    
+}
+
+ p {
+		letter-spacing: 0.1em;
+		margin: 0;
+		text-transform: uppercase;
+}
+
+
+		
+ h2 {
+		font-size: 1.5em;
+		letter-spacing: 0.1em;
+        padding-bottom: 0;
+        color: #e2f0f9;        
+        
+}
+
+
+.container {
+    text-align: center;
+}
+
+.wrapper{
+  margin-top: 30px;
+}             
