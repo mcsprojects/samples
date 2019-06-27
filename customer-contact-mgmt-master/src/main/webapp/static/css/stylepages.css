@@ -1,0 +1,132 @@
+html{
+	background-color: #ddd;
+}
+
+body, #mainWrapper {
+	height: 100%;
+	background-color: #ddd;
+}
+
+body, #mainWrapper, .form-control{    
+	font-size:12px!important;
+		    
+}
+.userpage{ 
+	margin-top: 35px;
+}
+h1 span, #mainWrapper {
+	color: #5379fa !important;
+	font-weight:400;	
+}
+h2 span, #mainWrapper {
+	color: #5379fa !important;	
+}
+strong, #mainWrapper { font-weight: 300; }
+
+body, #mainWrapper, .description{
+text-align: center;
+
+}
+
+body, #mainWrapper, .description h2 { font-family: 'Roboto', sans-serif; font-size: 30px; font-weight: 300; color: #888; }
+
+#mainWrapper {
+	/*height: 720px; Without explicit px values, % in children's does not work*/
+	height: 100vh; /*with Viewport-Percentage, we can handles all devices screens  */
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+.page-container {
+    margin-top: 130px;   
+    background-color: floralwhite;
+    width: 60%;
+    left: 20%;
+    position: absolute;
+    border-left-style: solid;
+    border-left-color:  #5379fa !important;
+    border-left-width: 10px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+        
+}
+
+.page-container-2 {
+    margin-top: 145px;   
+    background-color: floralwhite;
+    width: 60%;
+    left: 20%;
+    position: absolute;
+    border-left-style: solid;
+    border-left-color:  #5379fa !important;
+    border-left-width: 10px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+        
+}
+
+ .page-card {
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    color: #888;
+ }
+ .page-card p  { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 320; color: #888; text-align: justify; }
+ .page-card h3  { font-family: 'Roboto', sans-serif; font-size: 24px; font-weight: 300; color: #888; }
+
+.list {
+    counter-reset: li; 
+    list-style-type: circle; 
+    *list-style: decimal; 
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif';
+    font-weight: 300;
+    padding: 0;
+    margin-top: 1.5em;
+    
+}
+
+.list li {list-style-type: circle;
+    position: relative;
+    display: block;
+    padding: .3em .3em .3em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #816969;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+}
+
+.list li:before{
+    content: counter(li); color: #5379fa !important;
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #5379fa !important;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;    
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}   
+.login-form {
+    padding: 11%;
+    margin-top: -27px;
+}
+
+.floatRight{
+	float:right;
+	margin-right: 18px;
+}
+.btn{
+background:  #5379fa !important;
+border: none;
+}
+
+
+
