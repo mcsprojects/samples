@@ -18,16 +18,16 @@ Sistema de gestión de personal
 
 + Login/Registro de **SGP**:
 
-![Test Image 1](/screenshots/Login.png)
+![Test Image 1](screenshots/Login.png)
 
 + Al acceder a **SGP** con el rol _admin_ es posible gestionar los usuarios de la aplicación:
 
-![Test Image 2](/screenshots/Home_AdminRole.png)
+![Test Image 2](screenshots/Home_AdminRole.png)
 
 
 + Al acceder a **SGP** con el rol _user_ se accede únicamente a la gestión de los empleados:
 
-![Test Image 3](/screenshots/Home_UserRole.png)
+![Test Image 3](screenshots/Home_UserRole.png)
 
 
 
