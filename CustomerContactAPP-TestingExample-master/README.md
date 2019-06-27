@@ -1,7 +1,7 @@
 ## CustomerContactManagement-TestingExample
 
 
-![Test Image 1](/screenshots/Home.png)
+![Test Image 1](screenshots/Home.png)
 
 
 ---
