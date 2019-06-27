@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema de gestión de personal</title>
+
+<!-- importing the bootstrap styles -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+<link href="app/views/css/login.css" rel="stylesheet"></link>
+<link href="app/views/css/fade-out.css" rel="stylesheet"></link>
+<link href="app/views/css/search.css" rel="stylesheet"></link>
+<link href="app/views/css/styles.css" rel="stylesheet"></link>
+<link href="app/views/css/home.css" rel="stylesheet"></link>
+<link href="app/views/images/SGP.png" rel="stylesheet"></link>
+<link rel="shortcut icon" type="image/x-icon" href="app/views/images/favicon.ico">	      
+</head>
+
+<style>
+.margin-top-5 {
+	margin-top: 10px;
+}
+.panel-scroll {
+	height: 300px;
+	overflow-y: auto;
+}
+</style>
+<body ng-app="SGPApp" >
+
+	<!-- View for adding the navigation bar -->
+	<div ui-view="nav"></div>
+
+	<div class="container" style="margin-top: 50px;">
+		<!-- Main view for showing all views -->
+		<div ui-view="content"></div>
+	</div>
+
+	<!-- Including Scripts -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+
+	<!-- Including jquery and twitter bootstrap -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Including the app.js and route.js  -->
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/route.js"></script>
+
+	<!-- Including services -->
+	<script type="text/javascript" src="app/services/auth-service.js"></script>
+
+	<!-- Including controllers -->
+	<script type="text/javascript" src="app/controllers/nav.js"></script>
+	<script type="text/javascript" src="app/controllers/login.js"></script>
+	<script type="text/javascript" src="app/controllers/users.js"></script>
+	<script type="text/javascript" src="app/controllers/employees.js"></script>
+	<script type="text/javascript" src="app/controllers/page-not-found.js"></script>
+	<script type="text/javascript" src="app/controllers/access-denied.js"></script>
+	<script type="text/javascript" src="app/controllers/register.js"></script>
+	<script type="text/javascript" src="app/controllers/home.js"></script>	
+	
+			
+</body>
+</html>

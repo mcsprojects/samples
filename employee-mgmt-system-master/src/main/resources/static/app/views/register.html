@@ -1,0 +1,67 @@
+<style>
+.btn{
+    background-color: #37a000;
+    color: #fff;
+}
+.panel-default{
+    margin-top: 65px;   
+}
+</style>
+
+
+<div class=" col-md-6 col-md-offset-3">
+	<div class="panel panel-default">
+		<div id="register" class="panel-heading">Registro</div>
+		<div class="panel-body">
+			<div class="col-md-12">
+				<form ng-submit="submit()" name="register" novalidate>
+
+					<div class="form-group"">
+						<label for="name">Nombre y apellidos:</label> <input type="text" required
+							class="form-control" ng-model="userMgmt.name" ng-minlength="5" id="name"
+							name="name">
+							<div ng-messages="register.name.$error" ng-messages-multiple>
+                            <div ng-message="required">Campo obligatorio</div>
+                            <div ng-message="minlength">Mínimo 5 caracteres</div>
+					       </div>
+							
+					</div>
+
+					<div class="form-group">
+						<label for="username">Usuario:</label> <input type="text"
+							required class="form-control" ng-model="userMgmt.username"
+							id="username" name="username">
+							<div ng-messages="register.username.$error" role="alert">
+                            <div ng-message="required">Campo obligatorio</div>
+                            </div>
+					</div>
+
+					<div class="form-group">
+						<label for="pwd">Password:</label> <input type="password" required
+							class="form-control" id="pwd" ng-model="userMgmt.password"  ng-minlength="6"
+							name="password">
+							<div ng-messages="register.password.$error" ng-messages-multiple>
+                            <div ng-message="required">Campo obligatorio</div>
+                            <div ng-message="minlength">Mínimo 6 caracteres</div> 
+                            </div>
+					</div>
+
+					<div class="form-group">
+						<label for="cpwd">Confirme Password:</label> <input type="password"
+							name="confirmPassword" required class="form-control" id="cpwd"
+							ng-model="confirmPassword">
+					</div>
+
+					<div class="alert alert-warning margin-top-5"
+						ng-show="confirmPassword != userMgmt.password ">La contraseña no
+						coincide</div>
+
+					<button type="submit" class="btn btn-default"
+						ng-disabled="register.$invalid || (confirmPassword != userMgmt.password)">Registrarse</button>
+					<button class="btn btn-default" ui-sref="login">Login</button>
+					<div class="alert alert-info margin-top-5" ng-show="message">{{message}}</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

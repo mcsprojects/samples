@@ -1,0 +1,134 @@
+
+    <div class="generic-container">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div id="custom" class="panel-heading"><span class="lead">Usuario </span>
+        <button type="button" id="custom01" class="btn btn-default btn-sm"
+					ng-click="initAddUser()"><span class="glyphicon glyphicon-refresh"></span> Limpiar formulario 
+	    </button>
+        
+        </div>
+		<div  class="panel-body">
+	        <div class="formcontainer">
+	            
+	            <form ng-submit="submit()" name="userForm" class="form-horizontal" novalidate>           
+	              <input type="hidden" ng-model="userMgmt.id" id="id" name= "id" />
+	                <div class="row">
+				    <div class="form-group col-md-12">
+					<label class="col-md-3 control-lable" for="name">Nombre y apellidos</label>
+					<div class="col-md-7">
+						<input type="text" ng-model="userMgmt.name" ng-minlength="5" name="name" id="name" class="form-control input-sm" required />
+						 <div ng-messages="userForm.name.$error" ng-messages-multiple>
+                         <div ng-message="required">Campo obligatorio</div>
+                         <div ng-message="minlength">Mínimo 5 caracteres</div>
+					</div>
+				    </div>
+			        </div>
+			        </div>
+			        
+			        <div class="row">
+				    <div class="form-group col-md-12">
+					<label class="col-md-3 control-lable" for="name">Usuario</label>
+					<div class="col-md-7">
+						<input type="text" ng-model="userMgmt.username" name="username" id="username" class="form-control input-sm" required />
+						 <div ng-messages="userForm.username.$error" role="alert">
+                         <div ng-message="required">Campo obligatorio</div>                         
+				    </div>
+				    </div>
+			        </div>
+			        </div>
+			        <div class="row">
+				    <div class="form-group col-md-12">
+					<label class="col-md-3 control-lable" for="role">Rol</label>
+					<div class="col-md-7">
+					    <select required
+								multiple="multiple" class="form-control input-sm" required 
+								ng-model="userMgmt.roles" id="role" name="role">
+								<option value="ADMIN">Administrador</option>
+								<option value="USER">Usuario</option>
+						</select>						
+						 <div ng-messages="userForm.role.$error">
+                         <div ng-message="required">Campo obligatorio</div>                         
+					</div>
+				    </div>
+			        </div>
+			        </div>                
+	                
+	                <div class="row">
+	                    <div class="form-group col-md-12">
+	                        <label class="col-md-3 control-lable" for="password">Password</label>
+	                        <div class="col-md-7">
+	                            <input type="text" ng-model="userMgmt.password" ng-minlength="6" id="pwd" name="password"  class="form-control input-sm" required />
+	                            <div ng-messages="userForm.password.$error" ng-messages-multiple>
+                                <div ng-message="required">Campo obligatorio</div>
+                                <div ng-message="minlength">Mínimo 6 caracteres</div>                   
+                                
+                                </div>	                            
+	                        </div>
+	                    </div>              
+	                 </div>
+
+	                <div class="row">
+	                    <div class="form-actions floatRight">
+	                        <button id="custom-users" type="submit" class="btn btn-default btn-sm"
+							ng-disabled="userForm.$invalid">{{buttonText}}</button>								                       
+	                        <div class="alert alert-danger margin-top-5" ng-show="message">{{message}}</div>
+	                        
+	                </div>            	            	                    
+	                </div>
+	            </form>
+    	    </div>
+		</div>	
+    </div>   
+    
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div id="custom" class="panel-heading"><span class="lead">Lista de usuarios </span>
+        <input type='text' ng-model='searchText'  class="search-query"  placeholder="Buscar usuario  &#x1F50E"  /> 
+                  
+        </div>
+		<div class="panel-body">
+			<div style="font-size: 0.8em;" class="table-responsive">
+			<div class="alert alert-info animated fadeOut margin-top-5" ng-show="delMsg">{{deleteMessage}}</div>
+		    <div class="alert alert-info animated fadeOut margin-top-5" ng-show="editMsg">{{editMessage}}</div>
+		    <div class="alert alert-info animated fadeOut margin-top-5" ng-show="addMsg" >{{addMessage}}</div> 
+		        <table class="table table-hover">
+		            <thead>
+		            <tr class="custom-tr-users">		                
+		                <th>#</th>
+						<th>Nombre y apellidos</th>
+					    <th>Usuario</th>
+						<th>Rol</th>						
+						<th></th>
+						<th></th> 		                
+		            </tr>
+		            </thead>
+		            <tbody>
+		            <tr class="custom-tr-users" ng-repeat="user in users | filter:searchText">		                
+						<td>{{$index+1}}</td>
+						<td>{{user.name}}</td>
+						<td>{{user.username}}</td>
+						<td><span class="roles" ng-repeat="role in user.roles">{{role}}<span
+									ng-if="$index < (user.roles.length-1)">,</span>
+							</span></td>				
+						<td><button id="custom01" type="button" class="btn btn-outline-info btn-sm"
+									ng-click="initEdit(user)">
+									<span id="custom-glyphicon" class="glyphicon glyphicon-edit"></span>
+					    </button>						
+						<button id="custom01" type="button" class="btn btn-outline-info btn-sm"
+									ng-click="deleteUser(user)">
+									<span id="custom-glyphicon" class="glyphicon glyphicon-trash"></span>
+						</button>
+						</td>
+		            </tr>
+		            </tbody>
+		        </table>		
+			</div>
+		</div>
+    </div>
+     </div>
+  
+    
+
+
+  

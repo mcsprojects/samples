@@ -1,0 +1,26 @@
+
+ <div class="login-form">
+	
+	  <div class="login">
+	       
+       <form ng-submit="login()">		
+		    
+		<div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+    	<h4 class="modal-title">Login</h4>
+        <div class="form-group">
+            <input type="text" class="form-control"  ng-model="username" id="username" placeholder="Introduzca usuario" >
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="pwd" ng-model="password" placeholder="Introduzca contraseña" >
+        </div>
+        
+        <input type="submit"  class="btn btn-primary btn-block btn-lg" value="Log in">
+        <input type="submit"  class="btn btn-primary btn-block btn-lg" ui-sref="register" value="Registrarse">
+        <div class="alert alert-info margin-top-5" ng-show="message">{{message}}</div>
+                   
+    </form>	
+  </div>		 
+  </div>  
+ 
+   
+         

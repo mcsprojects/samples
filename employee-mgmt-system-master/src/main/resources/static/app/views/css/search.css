@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.search-query {
+  float: right;
+  width: 20%;
+  border: 1px solid #37a000;
+  padding: 5px;
+  padding-top: -2px;  
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  color: #555753;
+  font-size: 13px;
+}
+
+.search-query:focus{
+  color: #727977;
+}
+

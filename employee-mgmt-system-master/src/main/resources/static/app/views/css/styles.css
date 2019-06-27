@@ -1,0 +1,70 @@
+.panel-body{
+font-size: 10px;
+} 
+.panel-heading{
+background-color: #37a000;
+color: #fff;
+}
+.btn{
+    color: #37a000;
+}
+#register, .panel-heading{
+background-color: rgb(55, 160, 0);
+color: #fff;
+font-weight: bold;
+text-align: center;
+}
+#custom, .panel-heading{
+background-color: #37a000;
+color: #fff;
+text-align: left;
+
+}
+span, .lead{
+font-size: 15px;
+font-weight: bold;
+margin-right:10px;
+}
+span, .roles{
+font-size: 10px;
+font-weight: normal;
+margin-right:10px;
+}
+span, #custome-ghyphicon{
+font-size: 14px;
+font-weight: bold;
+margin-right:10px;
+}
+
+
+#custom01, .btn{
+background-color: #fff; 
+color: #37a000;
+margin-left: 10px;
+}
+#custom-users, .btn{
+background-color: rgb(55, 160, 0);
+margin-left:25px;
+ color: #fff;
+}
+#custom, .btn{
+background-color: #37a000;
+color: #fff;
+}
+#customfont, .table-responsive{
+font-size: 0.8em;
+}
+tr{
+font-size: 9px;
+}
+tr, #custom-tr{
+font-size: 9px;
+}
+tr, .custom-tr{
+font-size: 10px;
+}
+tr, .custom-tr-users{
+font-size: 11px;
+}
+
+

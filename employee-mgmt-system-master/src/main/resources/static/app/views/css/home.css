@@ -1,0 +1,23 @@
+.centered1{
+margin:-60px auto; 
+display: block;
+}
+.centered2{
+color: #37a000;
+font-size: 16px;
+font-style: normal;
+display: block;
+text-align: center;
+margin: 7px 0 0px 0;
+line-height: 1.6;
+}
+p span {
+display: block;
+margin: -18px 0 0px 0;
+font-size: 45px;
+line-height: 80px;
+color: #37a000;
+text-shadow: 0 9.36px 8.896px #c4b59d,0 -2px 1px #fff;
+letter-spacing: -3px;
+ text-align: center;
+}

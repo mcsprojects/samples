@@ -1,0 +1,54 @@
+<style>
+.user {
+	font-weight: bold;
+	color:#fff;   
+}
+.logout {
+	cursor: pointer;
+	margin-left: 5px;
+	color:#fff;
+    
+}
+.navbar-default {
+  background-color: #000;
+  color: #fff; 
+  border: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,.175);
+  .btn-default {
+    color: #000;
+    &:hover {
+      background-color: #000; 
+  }
+} 
+</style>
+
+<nav class="navbar navbar-default navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" ng-class="" style="color: rgb(55, 160, 0); margin-left:-65px;" ui-sref="home"><span style=" font-family: serif; color: #37a000; font-size:21px; font-weight: bold; padding-left:10px; padding-right:7px;">SGP</span>Sistema de gestión de personal</a>
+			  
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">			    
+				<li ng-show="user.username=='admin'"><a style="color: rgb(55, 160, 0)" ui-sref="users">Administración de usuarios</a></li>
+				<li ng-show="user.username"><a style="color: rgb(55, 160, 0)" ui-sref="employees">Administración de empleados</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+
+				<li ng-show="user.username"><a> <span style="color: rgb(55, 160, 0)" class="user">Bienvenido/a,
+							{{user.name}}</span> <span style="color: rgb(55, 160, 0)" ng-click="logout()" href=""
+						class="logout">Salir</span>
+				</a></li>
+				<li ng-show="!user.username"><a style="color: rgb(55, 160, 0)" ui-sref="register">Registrarse</a></li>
+			</ul>
+		</div>
+		<!--/.nav-collapse -->
+	</div>
+</nav>
