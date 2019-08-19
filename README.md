@@ -7,4 +7,4 @@
 | [Customer Contact App](https://github.com/mcsprojects/samples/tree/master/CustomerContactAPP-TestingExample-master)                      | Spring 4+Hibernate 4+MySQL+JasperReports+Maven/Mockito+TestNG           |
 | [employee-mgmt-system](https://github.com/mcsprojects/samples/tree/master/employee-mgmt-system-master)                      | Spring Boot 2 REST API+Spring Security 5+JPA/Hibernate+AngularJS+MySQL    |   
 | [Gestor de incidencias](https://github.com/mcsprojects/samples/tree/master/SpringBoot2-React-MongoDB-master)                     | Spring Boot 2+React +MongoDB+Maven                                        |   
-|[Videoteca Online](https://github.com/mcsprojects/samples/tree/master/mongodb-express-react-nodejs-master)                          | Ejemplo de React CRUD                                                     |   
+|[Videoteca Online](https://github.com/mcsprojects/samples/tree/master/mongodb-express-react-nodejs-master)                          | MongoDB+Express+React+Node.js                                                     |   
