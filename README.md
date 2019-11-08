@@ -1,7 +1,7 @@
 # ![Test Image 1](images/mcsprojects.png) mcsprojects/samples
 
 
-| Nombre del ejemplo                        | Descripción                                                               | 
+| Nombre                                    | Descripción                                                               | 
 | ----------------------------------------- | ------------------------------------------------------------------------- |
 | [Customer Contact Management](https://github.com/mcsprojects/samples/tree/master/customer-contact-mgmt-master)              | Spring 4+Spring Security+Hibernate+PostgreSQL+JasperReports+Maven         |
 | [Customer Contact App](https://github.com/mcsprojects/samples/tree/master/CustomerContactAPP-TestingExample-master)                      | Spring 4+Hibernate 4+MySQL+JasperReports+Maven/Mockito+TestNG           |
